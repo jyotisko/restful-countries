@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restful Countries</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./controller.js" defer></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav__container">
+      <h1>Where in the world?</h1>
+      <div class="darkmode">
+        <h1><svg data-light="true" class="mode" xmlns="http://www.w3.org/2000/svg" class="ionicon"
+            viewBox="0 0 512 512">
+            <title>Moon</title>
+            <path
+              d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+              fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+          </svg></h1>
+      </div>
+    </div>
+  </nav>
+
+  <section id="search">
+    <div class="search__content">
+      <form>
+        <input type="text" class="search-text" placeholder="Search for a country..." autofocus>
+      </form>
+      <select name="select">
+        <option value="default" selected disabled>Filter by region</option>
+        <option value="africa">Africa</option>
+        <option value="america">America</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="oceania">Oceania</option>
+      </select>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="results__container">
+      <!-- <figure>
+        <div class="img">
+          <img src="./design/desktop-preview.jpg" alt="Country">
+        </div>
+        <div class="result-text">
+          <h2 class="name">Germany</h2>
+          <h4 class="population"><span class="title">Population: </span>81,320,130</h4>
+          <h4 class="region"><span class="title">Region: </span>Europe</h4>
+          <h4 class="capital"><span class="title">Capital: </span>Berlin</h4>
+        </div>
+      </figure> -->
+    </div>
+  </section>
+
+  <section id="more-info">
+    <div class="more-info__container">
+      <!-- <div class="part__1">
+        <button class="back">
+          <-- Back</button>
+            <img class="flag" src="./design/desktop-design-detail-light.jpg" alt="Flag">
+      </div>
+
+      <div class="part__2">
+        <h2 class="name">Belgium</h2>
+        <div class="info">
+          <div class="part__1">
+            <h3><span class="title">Native Name: </span>Hola</h3>
+            <h3><span class="title">Population: </span>3930</h3>
+            <h3><span class="title">Region: </span>Asia</h3>
+            <h3><span class="title">Sub Region: </span>North Asia</h3>
+            <h3><span class="title">Capital: </span>Beijing</h3>
+          </div>
+          <div class="part__2">
+            <h3><span class="title">Top Level Domains: </span>.be</h3>
+            <h3><span class="title">Currencies: </span>Euro, Rupees</h3>
+            <h3><span class="title">Languages: </span>Dutch, French</h3>
+          </div>
+        </div>
+
+        <div class="border">
+          <h3><span class="title">Border Countries: </span><span class="border-country">France</span> <span
+              class="border-country">Spain</span> <span class="border-country">Japan</span></h3>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+export const DEFAULT_COUNTRIES = ['germany', 'usa', 'brazil', 'iceland', 'afganistan', 'aland island', 'albania', 'algeria'];
