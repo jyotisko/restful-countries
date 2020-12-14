@@ -10,10 +10,12 @@ const manageHandlerLoad = () => DEFAULT_COUNTRIES.forEach(country => model.getCo
 
 const manageSearchHandler = query => model.getCountryByName(query)
   .then(data => searchView.generateMarkup(data))
-  .catch(swal({
-    title: 'Country not found!',
-    icon: 'error'
-  }));
+  .catch(() => {
+    return swal({
+      title: 'Country not found!',
+      icon: 'error'
+    })
+  });
 
 const manageRegionHandler = region => model.getCountriesByRegion(region).then(data => regionView.generateMarkup(data));
 

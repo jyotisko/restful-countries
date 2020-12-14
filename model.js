@@ -5,6 +5,7 @@ export const getCountryByName = async function (country) {
     return data;
   } catch (err) {
     console.error(`${err} 💥💥💥💥💥💥`);
+    throw new Error('Country not found');
   }
 };
 
