@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Andika New Basic', sans-serif;
 }
 
 :root {
@@ -43,7 +46,7 @@ nav .nav__container {
 }
 
 nav .nav__container h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--title-color);
 }
 
@@ -105,6 +108,8 @@ nav .nav__container h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 
 #results .results__container figure {
@@ -120,7 +125,7 @@ nav .nav__container h1 {
 }
 
 #results .results__container figure .img,
-#results .results__container figure img {
+#results .results__container figure .img img {
   height: 100%;
   width: 100%;
 }
@@ -135,7 +140,7 @@ nav .nav__container h1 {
 }
 
 figure .result-text .name {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: var(--title-color);
@@ -254,3 +259,122 @@ h3 {
   margin-bottom: 1rem;
 }
  
+@media screen and (max-width: 1370px) {
+  html {
+    font-size: 60%;
+  }
+
+  #results .results__container {
+    width: 90%;
+    grid-gap: 3rem;
+  }
+  
+  #results .results__container figure {
+    height: 32rem;
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+
+@media screen and (max-width: 970px) {
+  html {
+    font-size: 50%;
+  }
+  #search .search__content input,
+  #search .search__content select {
+    font-size: 2rem;
+    padding: 1rem 4rem;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  #results .results__container {
+    width: 80%;
+    grid-gap: 3rem;
+  }
+  
+  #results .results__container figure {
+    height: 30rem;
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .darkmode svg {
+    width: 20%;
+    height: 10%;
+    position: relative;
+    right: -50%;
+  }
+  #results .results__container {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #results .results__container figure {
+    height: 35rem;
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  html {
+    font-size: 40%;
+  }
+  #results .results__container figure {
+    height: 35rem;
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 38%;
+  }
+  #results .results__container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+  #results .results__container figure {
+    height: 35rem;
+    width: 38rem;
+  }
+  figure .result-text .population,
+  figure .result-text .capital,
+  figure .result-text .region {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  #more-info .more-info__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #more-info .more-info__container .part__1 {
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  nav .nav__container h1 {
+    font-size: 2.5rem;
+  }
+  #results .results__container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 50%;
+  }
+  #results .results__container figure {
+    height: 40rem;
+    width: 40rem;
+  }
+}

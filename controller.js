@@ -8,7 +8,12 @@ import * as model from './model.js';
 
 const manageHandlerLoad = () => DEFAULT_COUNTRIES.forEach(country => model.getCountryByName(country).then(data => homeView.renderMarkup(data)));
 
-const manageSearchHandler = query => model.getCountryByName(query).then(data => searchView.generateMarkup(data));
+const manageSearchHandler = query => model.getCountryByName(query)
+  .then(data => searchView.generateMarkup(data))
+  .catch(swal({
+    title: 'Country not found!',
+    icon: 'error'
+  }));
 
 const manageRegionHandler = region => model.getCountriesByRegion(region).then(data => regionView.generateMarkup(data));
 
