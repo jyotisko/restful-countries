@@ -361,7 +361,12 @@ h3 {
     grid-template-columns: repeat(1, 1fr);
   }
   #more-info .more-info__container .part__1 {
-    height: 80%;
+    grid-template-rows: 10% 20% 70%;
+  }
+  #more-info .more-info__container .part__2 {
+    /* transform: translateY(-30%); */
+    height: 100%;
+    grid-template-rows: 10% 60% 30%;
   }
 }
 
